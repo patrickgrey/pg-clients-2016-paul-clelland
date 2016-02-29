@@ -47,3 +47,32 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+
+.title-bar {
+      width: 100%;
+      z-index: 10;
+      transition: height .25s ease;
+      height: 4.5em;
+    }
+    .title-bar .title-bar-right, .title-bar .title-bar-left {
+      transition: padding-top .25s ease;
+      padding-top: 1.4em;
+    }
+    .title-bar.shrink {
+      height: 3em;
+    }
+    .title-bar.shrink .title-bar-right, .title-bar.shrink .title-bar-left {
+      padding-top: 0em;
+    }
+    .title-bar .dropdown.menu li {
+      float: left;
+    }
+    .title-bar .dropdown.menu .is-dropdown-submenu {
+      border: none;
+      background-color: #0A0A0A;
+    }
+    #root {
+      margin-top: 2em;
+    }
