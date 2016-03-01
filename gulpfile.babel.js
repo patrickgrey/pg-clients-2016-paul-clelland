@@ -118,7 +118,7 @@ function images() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
-    server: 'dist', port: PORT
+    server: 'dist', port: PORT, notify: false
   });
   done();
 }
